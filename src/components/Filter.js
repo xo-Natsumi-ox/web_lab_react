@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import FilterSelect from './FilterSelect'
 import Search from './Search'
-import {FilterStyle,OnlyFilterStyle} from '../css/searchAndFilter.styles'
+import {FilterStyle,OnlyFilterStyle} from '../styles/searchAndFilter.styles'
 
 
 

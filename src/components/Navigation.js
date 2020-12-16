@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Nav, NavItem } from 'reactstrap';
-import { NavStyle, NavLinks } from '../css/header.styles'
+import { NavStyle, NavLinks } from '../styles/header.styles'
 
 const Navigation =()=>(
     

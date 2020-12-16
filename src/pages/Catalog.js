@@ -1,7 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import {ModelContainer,Model, ModelH, ModelH3, ModelBtn} from '../css/model.styles.js'
+import {ModelContainer,Model, ModelH, ModelH3, ModelBtn} from '../styles/model.styles.js'
 import Filter from '../components/Filter'
+import { Link } from "react-router-dom";
+import Home from './Home.js';
 
 function Catalog(props) {
 
@@ -37,7 +39,7 @@ function Catalog(props) {
                         <ModelH>Size: {shirt.size}</ModelH>
                         <ModelH>Gender: {shirt.forWomMan}</ModelH>
                         <ModelH>Price: {shirt.price} UAH</ModelH>
-                        <ModelBtn>Buy</ModelBtn>
+                        <Link to={"/clothes/" + shirt.id}><ModelBtn>Buy</ModelBtn></Link>
                     </Model>
                 )}
             </ModelContainer>

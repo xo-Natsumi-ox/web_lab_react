@@ -6,7 +6,7 @@ import {
     LinkedinOutlined
   } from "@ant-design/icons";
 import Logo from '../images/logo.png'
-import {IconStyle, SocialMediaStyle, Copyright, FooterText, FooterP, IconsStyle, FooterStyle, FooterBody} from '../css/footer.styles.js';
+import {IconStyle, SocialMediaStyle, Copyright, FooterText, FooterP, IconsStyle, FooterStyle, FooterBody} from '../styles/footer.styles.js';
 
 function Footer() {
     return (
