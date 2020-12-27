@@ -5,7 +5,7 @@ import CatalogPage from './pages/Catalog.js';
 import Header from './header/Header.js';
 import Footer from './footer/Footer.js';
 import ItemPage from "./pages/Item.js";
-import clothesList from "./models/modelItem";
+import CartPage from './pages/Cart.js'
 
 function App() {
     return (
@@ -13,13 +13,16 @@ function App() {
             <Header />
             <Switch>
                 <Route exact path="/">
-                    <HomePage clothesList={clothesList} />
+                    <HomePage/>
                 </Route>
                 <Route path="/catalog">
-                    <CatalogPage clothesList={clothesList} />
+                    <CatalogPage/>
                 </Route>
                 <Route path="/clothes/:id">
-                    <ItemPage clothesList={clothesList} />
+                    <ItemPage/>
+                    </Route>
+                <Route path="/cart">
+                    <CartPage/>
                 </Route>
             </Switch>
             <Footer />
